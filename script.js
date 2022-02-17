@@ -242,6 +242,7 @@ document.getElementById("switch-1").checked = true;
 }
 function myFunctionlogin()
 {
+  if()
   const link = document.createElement('a');
 			link.href = url;
 			link.target = '_blank';
