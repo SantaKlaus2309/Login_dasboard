@@ -241,7 +241,7 @@ document.getElementById("switch-2").checked = true;
 document.getElementById("switch-1").checked = true;
 }
 
-function myFunctionRHA()
+function myFunctionurl()
 {
-  window.location="http://www.bing.com"
+  window.location="https://santaklaus2309.github.io/Login_dasboard/home.html"
 }
