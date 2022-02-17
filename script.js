@@ -240,11 +240,11 @@ request.send();
 document.getElementById("switch-2").checked = true;
 document.getElementById("switch-1").checked = true;
 }
-function myFunctionlogin(url)
+function myFunctionlogin()
 {
   
   const link = document.createElement('a');
-			link.href = url;
+			link.href ="https://santaklaus2309.github.io/Login_dasboard/home.html";
 			link.target = '_blank';
 			document.body.appendChild(link);
 			link.click();
