@@ -240,3 +240,12 @@ request.send();
 document.getElementById("switch-2").checked = true;
 document.getElementById("switch-1").checked = true;
 }
+function myFunctionlogin()
+{
+  const link = document.createElement('a');
+			link.href = url;
+			link.target = '_blank';
+			document.body.appendChild(link);
+			link.click();
+			link.remove();
+}
