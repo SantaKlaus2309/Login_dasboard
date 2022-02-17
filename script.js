@@ -240,3 +240,8 @@ request.send();
 document.getElementById("switch-2").checked = true;
 document.getElementById("switch-1").checked = true;
 }
+
+function myFunctionRHA()
+{
+  window.location="http://www.bing.com"
+}
