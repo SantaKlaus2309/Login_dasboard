@@ -243,5 +243,5 @@ document.getElementById("switch-1").checked = true;
 
 function myFunctionurl()
 {
-  window.location="https://santaklaus2309.github.io/Login_dasboard/home.html"
+  window.location.href ="https://santaklaus2309.github.io/Login_dasboard/home.html"
 }
