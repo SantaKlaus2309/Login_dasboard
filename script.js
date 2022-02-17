@@ -243,5 +243,14 @@ document.getElementById("switch-1").checked = true;
 
 function myFunctionurl()
 {
-  window.location ="santaklaus2309.github.io/Login_dasboard/home.html"
+  let inputuser = document.getElementsByClassName("user")[0].value;
+  let inputpass=  document.getElementsByClassName("pass")[0].value;
+
+  if(inputuser="Niklaus")AND(inputpass="admin")
+  {
+    document.getElementById("login")
+    location.href = "https://santaklaus2309.github.io/Login_dasboard/home.html";
+  }
+   
+ 
 }
