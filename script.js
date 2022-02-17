@@ -240,7 +240,7 @@ request.send();
 document.getElementById("switch-2").checked = true;
 document.getElementById("switch-1").checked = true;
 }
-function myFunctionlogin()
+function myFunctionlogin(url)
 {
   
   const link = document.createElement('a');
