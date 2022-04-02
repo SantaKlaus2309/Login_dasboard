@@ -173,6 +173,29 @@ request.send();
 }
 function myFunction3()
 {
+  var request = new XMLHttpRequest();
+
+  request.open('GET', 'https://blr1.blynk.cloud/external/api/update?token=7rzvV6nkV6SVnHafeVI3SV0x6IaPrXJS&v3=0');
+  
+  request.onreadystatechange = function () {
+  if (this.readyState === 4) {
+  console.log('Status:', this.status);
+  console.log('Headers:', this.getAllResponseHeaders());
+  console.log('Body:', this.responseText);
+  }
+  };
+  
+  request.send();
+  
+
+
+
+  window.location.reload();
+document.getElementById("switch-1").checked = false;
+document.getElementById("switch-2").checked = false;
+}
+function myFunction4()
+{
 
   var request = new XMLHttpRequest();
 
@@ -203,54 +226,43 @@ console.log('Body:', this.responseText);
 
 request.send();
 
-document.getElementById("switch-1").checked = false;
-document.getElementById("switch-2").checked = false;
-}
-function myFunction4()
-{
-
-  var request = new XMLHttpRequest();
-
-request.open('GET', 'https://blr1.blynk.cloud/external/api/update?token=7rzvV6nkV6SVnHafeVI3SV0x6IaPrXJS&v1=0');
-
-request.onreadystatechange = function () {
-if (this.readyState === 4) {
-console.log('Status:', this.status);
-console.log('Headers:', this.getAllResponseHeaders());
-console.log('Body:', this.responseText);
-}
-};
-
-request.send();
-
-
-var request = new XMLHttpRequest();
-
-request.open('GET', 'https://blr1.blynk.cloud/external/api/update?token=7rzvV6nkV6SVnHafeVI3SV0x6IaPrXJS&v2=0');
-
-request.onreadystatechange = function () {
-if (this.readyState === 4) {
-console.log('Status:', this.status);
-console.log('Headers:', this.getAllResponseHeaders());
-console.log('Body:', this.responseText);
-}
-};
-
-request.send();
 document.getElementById("switch-2").checked = true;
 document.getElementById("switch-1").checked = true;
 }
 
-function myFunctionurl()
-{
-  let inputuser = document.getElementsByClassName("user")[0].value;
-  let inputpass=  document.getElementsByClassName("pass")[0].value;
+function motorplay(){
 
-  if(inputuser="Niklaus")AND(inputpass="admin")
-  {
-    document.getElementById("login")
-    location.href = "https://santaklaus2309.github.io/Login_dasboard/home.html";
-  }
-   
- 
+   var request = new XMLHttpRequest();
+
+request.open('GET', 'https://blr1.blynk.cloud/external/api/update?token=7rzvV6nkV6SVnHafeVI3SV0x6IaPrXJS&v3=0');
+
+request.onreadystatechange = function () {
+if (this.readyState === 4) {
+console.log('Status:', this.status);
+console.log('Headers:', this.getAllResponseHeaders());
+console.log('Body:', this.responseText);
+}
+};
+
+request.send();
+
+}
+
+
+function motorstop(){
+
+  var request = new XMLHttpRequest();
+
+request.open('GET', 'https://blr1.blynk.cloud/external/api/update?token=7rzvV6nkV6SVnHafeVI3SV0x6IaPrXJS&v3=1');
+
+request.onreadystatechange = function () {
+if (this.readyState === 4) {
+console.log('Status:', this.status);
+console.log('Headers:', this.getAllResponseHeaders());
+console.log('Body:', this.responseText);
+}
+};
+
+request.send();
+      
 }
